@@ -41,6 +41,7 @@ h2,h3{
 
 .wrapper{
     margin: 0 auto;
+    max-width: 1200;
     width: 80%;
 }
 
@@ -58,7 +59,9 @@ header{
 }
 
 h1{
+    font-family: 'Zen Dots', cursive;
     letter-spacing: 0.2rem;
+
 }
 
 header h2{
@@ -67,7 +70,7 @@ header h2{
 
                                         /* Main */
 section{
-    height: 50vh;
+    height: 60vh;
 }
 
 #about h2, h3{
@@ -79,18 +82,51 @@ section{
     display: flex;
     /* flex-basis: ; */
     flex-wrap: wrap;
+    marging:5%;
 }
 #skills li{
     display: flex;
     flex-basis: 25%;
-    flex-direction: column;   
+    flex-direction: column;  
+    align-items: center; 
 }
 
 .devicon, .fas{
     color: rgb( 77, 7, 235);
-    ;
+    font-size: 2rem    ;
 }
+.devicon{
+    font-family: 'devicons';
+    font-style: normal;
+    font-weight: normal;
+    fon-variant: normal;
+}
+.responsive{
+    position:relative
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+}
+
+.fa-desktop{
+    /* position: absolute; */
+    /* left: 1rem */
+    /* right: 1px; */
+}
+
+.fa-mobile-alt{
+    font-size: 1.5rem;
+    position: absolute;
+    /* left: 1rem; */
+    /* closest I could position without skewing other elements */
+    /* top: 10% */
 
 footer{
     text-align: center;
+}
+
+@media (max-width: 549px) {
+    #skills li{
+        /* flex-basis: 33%; */
+        
 }
