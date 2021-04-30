@@ -364,9 +364,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         top: 25%
     }
 
+    .mdbDiv{
+        height: 400px;
+        width: 400px;
+    }
     .mdbImg{
         height: 142.86px;
         width: 500px;
+        position: relative;
+        right: 15%;
+        transform: rotate(-45deg);
     }
 
     .anywhereImg {
@@ -546,7 +553,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 @media (max-width: 1700px) {
     .projDiv{
         /* height: 10vh; */
-        width: 300px;
+        /* width: 300px; */
     }
 }   
 
