@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link rel="stylesheet" href="style.css">
@@ -18,13 +22,6 @@
 </html>
 
 <header>
-    <div class="wrapper">
-        <h1>Toria Walker-McHayle</h1>
-        <h2>Front-End Web Developer</h2>
-        <!-- Not sure if h2 tag should be a p tag  -->
-    </div>
-</header>
-<main>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -33,113 +30,262 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
+    <div class="header">
+    <div class="wrapper">
+        <h1>Toria Walker-McHayle</h1>
+        <p>Front-End Web Developer</p>
+        <!-- Not sure if h2 tag should be a p tag  -->
+    </div>
+    </div>
+</header>
+<main>
+    <!-- <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills & Tools</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav> -->
     <section id="about">
         <div class="wrapper">
             <h2>About</h2>
-            <h3>Who is Toria?</h3>
-            <p></p>
+            <!-- <h3>Who is Toria?</h3> -->
+            <div class="about">
+            <div class="aboutFlex">
+
+                <div class="aboutImg">
+                    <img src="./project-images/me-pic-2.png" alt="picture of Toria">
+                </div>
+                <!-- <div class="aboutP"> -->
+                    <h3>Who is Toria?</h3>
+                <p>Hey Beautiful People!</p>
+                <p>I, Toria am Front-End Developer. I love diversity. I love Inclusion. I love the planet. </p>
+                <P>I am on a mission create apps that give the all users an enjoyable experience. </P>
+            <!-- </div> -->
+            </div>
+            </div>
         </div>
     </section>
     <section id="portfolio">
         <div class="wrapper">
-            <h2>Portfolio</h2>
+            <div>
+            <h2>Projects</h2>
                 <ul>
+                    <!-- <div class="projFlexOne"> -->
                     <li>
                         <h3>Harper Project</h3>
-                        <img src="./project-images/" alt="screenshot of Harper Project">
-                        <p></p>
-                        <a href="https://github.com/Layd-T/toria_Walker-McHayle_Project_One.git">GitHub</a>
-                        <a href="toriasharperproject.netlify.app">Live Site</a>
+                        <div class="projFlex">
+                            <div class="imgDiv harperDiv">
+                                <img src="./project-images/harper-project.png" alt="screenshot of Harper Project" class="harperImg">
+                            </div>
+                            <div class="projDiv harperP">
+                                <p>A multi-page site created using a designer brief and design files .</p>
+                            <h4>Created With</h4>
+                                <div class="pIconDiv">
+                                    <i class="devicon-html5-plain colored" aria-hidden="true" aria-label="HTML5 icon" title="HTML5"></i>
+                                    <i class="devicon-sass-original colored" aria-hidden="true" aria-label="CSS language extension Sass icon" title="Sass"></i>
+                                </div> 
+                                <div class="pLinkDiv">
+                                    <nav aria-label="harper project sites">
+                                        <a href="https://github.com/Layd-T/ toria_Walker-McHayle_Project_One.git">GitHub</a>
+                                        <a href="toriasharperproject.netlify.app">Live Site</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>  
                     </li>
+                    <li>
+                        <h3>Get Beer</h3>
+                        <div class="projFlex">
+                            <div class="imgDiv beerDiv">
+                                <img src="./project-images/get-beer-project.png" alt="Screenshot of Get Beer project" class="beerImg">
+                            </div>
+                            <div class="projDiv">
+                                <p>A site that helps you find the nearest brewry to you. Developed and designed with fellow developer Luis Carlos Barrero using a Rest API</p>
+                            <h4>Created With</h4>
+                                <div class="pIconDiv">
+                                    <i class="devicon-html5-plain colored" aria-hidden="true" aria-label="HTML5 icon" title="HTML5"></i>
+                                    <i class="devicon-css3-plain colored" aria-hidden="true" aria-label="CSS3 icon" title="CSS3"></i>
+                                    <i class="devicon-javascript-plain colored" aria-hidden="true" aria label="javascript icon" title="JavaScript"></i>
+                                </div>
+                                <div class="pLinkDiv">
+                                    <nav aria-label="get beer project sites">
+                                        <a href="https://github.com/Juno-Project-Two/get-beer">GitHub</a>
+                                        <a href="https://juno-project-two.github.io/get-beer/">Live Site</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- </div> -->
                     <li>
                         <h3>My Movie Database (MDB)</h3>
-                        <!-- <img src="./project-images/harper-project.png" alt=""> -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut suscipit fugit consectetur veritatis voluptate deserunt quos quia eum maiores ab molestiae, voluptates id cupiditate.</p>
-                        <!-- Do a mouseover for description to save space, maybe add a close box -->
-                        <a href="https://github.com/MSTRobort/myMovieDatabase.git">GitHub</a>
-                        <a href="mymoviedatabase.netlify.app">Live Site</a>
+                        <div class="projFlex">
+                            <div class="imgDiv mdbDiv">
+                                <img src="./project-images/mdb-project.png" alt="My Movie Datatbase project screenshot" class="mdbImg">
+                            </div>
+                            <div class="projDiv">
+                                <p>Looking for a movie kick back and relax Toria? Look no further. Here you'll find the perfect movie app where you can find almost any movie from a large database.</p>
+
+                                <p>Not ready to watch yet?
+                                    No, worries. We have you covered. Here on this app, you can store a list of movies that you can refer back to when you're ready.
+                                </p>
+                            <!-- Do a mouseover for description to save space, maybe add a close box -->
+                            <h4>Created With</h4>
+                                <div class="pIconDiv">
+                                    <i class="devicon-html5-plain colored" aria-hidden="true" aria-label="HTML5 icon" title="HTML3"></i>
+                                    <i class="devicon-css3-plain colored" aria-hidden="true" aria-label="CSS3 icon" title="CSS3"></i>
+                                    <i class="devicon-react-original colored" aria-hidden="true" aria-label="javascript library react icon" title="React"></i>
+                                </div>
+                                <div class="pLinkDiv">
+                                    <nav aria-label="my movie database project sites">
+                                        <a href="https://github.com/MSTRobort/myMovieDatabase.git">GitHub</a>
+                                        <a href="mymoviedatabase.netlify.app">Live Site</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </li>
                     <li>
-                        <h3>Anywhere but Here</h3>
-                        <img src="" alt="">
-                        <p></p>
-                        <a href="https://github.com/MappleInc/anywhereButHere.git">GitHub</a>
-                        <a href="https://quizzical-wescoff-cb58e4.netlify.app/">Live Site</a>
+                        <h3>Anywhere But Here!</h3>
+                        <div class="projFlex">
+                            <div class="imgDiv anyDiv">
+                                <img src="./project-images/anywhere-but-here-project.png" alt="Screenshot of Anywhere But Here Project" class="anywhereImg">
+                            </div>
+                            <div class="projDiv">    
+                                <p>Stuck at home? Don't know where to go? You don't really wanna leave you're home, but you're four walls are also making you feel a little bit trapped</p>
+
+                                <p>Well here's an app that will Help you find different places in your are you can visit within any category. There not too far, not to close without too much excitement, but with just the right amount of non-excitement! Just what you're looking for! </p>
+
+                                <p>Developed with a design brief and in collaboration with fellow developers Stephen Schooley, Anhahita Jamili, and Dave Henry.</p>
+                            <h4>Created With</h4>
+                            <div class="pIconDiv">
+                                <i class="devicon-html5-plain colored" aria-hidden="true" aria-label="HTML5 icon" title="HTML5"></i>
+                                <i class="devicon-css3-plain colored" aria-hidden="true" aria-label="CSS3 icon" title="CSS3"></i>
+                                <i class="devicon-react-original colored" aria-hidden="true" aria-label="javascript library react icon" title="React"></i>
+                            </div>
+                                <div class="pLinkDiv">
+                                    <nav aria-label="anywhere but here project sites">
+                                        <a href="https://github.com/MappleInc/anywhereButHere.git">GitHub</a>
+                                        <a href="https://quizzical-wescoff-cb58e4.netlify.app/">Live Site</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             <p></p>
         </div>
     </section>
     <section id="skills">
-        <div class="wrapper">
+        <div class="wrapper skills">
             <!-- <img src="" alt=""> -->
             <h2>Skills & Tools</h2>
                 <ul>
                     <li> 
-                        <i class="devicon-html5-plain colored"></i>
+                        <!-- <i class="devicon-html5-plain colored" aria-hidden="true" aria-label="HTML5 icon"></i> -->
+                        <i class="fab fa-html5" aria-hidden="true" aria-label="HTML5 icon"></i>
                         <span>HTML5</span>
                     </li>
                     <li>
-                        <i class="devicon-css3-plain colored"></i>
+                        <!-- <i class="devicon-css3-plain colored" aria-hidden="true" aria-label="CSS3 icon"></i> -->
+                        <i class="fab fa-css3-alt" aria-hidden="true" aria-label="CSS3 icon"></i>
                         <span>CSS3</span>
                     </li>
                     <li>
-                        <i class="devicon-sass-original colored"></i>
+                        <!-- <i class="devicon-sass-original colored" aria-hidden="true" aria-label="CSS extension Sass icon"></i> -->
+                        <i class="fab fa-sass" aria-hidden="true" aria-label="CSS extension Sass icon"></i>
                         <span>Sass</span>
                     </li>
                     <li>
-                        <i class="devicon-javascript-plain colored"></i>
+                        <!-- <i class="devicon-javascript-plain colored" aria-hidden="false" aria-label="javascript icon"></i> -->
+                        <i class="fab fa-js-square" aria-hidden="true" aria-label="javascript icon"></i>
                         <span>JavaScript</span>
                     </li>
                     <li>
-                        <i class="devicon-jquery-plain colored"></i>
+                        <i class="devicon-jquery-plain colored" aria-hidden="true" aria-label="jQuery icon"></i>
                         <span>jQuery</span>
                     </li>
                     <li> 
-                        <i class="devicon-react-original colored"></i>
+                        <!-- <i class="devicon-react-original colored" aria-hidden="true" aria-label="javascript library react icon"></i> -->
+                        <i class="fab fa-react" aria-hidden="true" aria-label="javascript library react icon"></i>
                         <span>React</span>
                     </li>
                     <li> 
-                        <i class="devicon-firebase-plain colored"></i>
+                        <i class="devicon-firebase-plain colored" aria-hidden="true" aria-label="firebase database icon"></i>
                         <span>Firebase</span>
                     </li>
                     <li>
-                        <i class="fas fa-universal-access"></i>
+                        <i class="fas fa-universal-access" aria-hidden="true" aria-label="accessibility icon"></i>
                         <span>Accessibility</span>
                     </li>
                     <li class="responsive">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden="true" aria-label="responsive icon"></i>
                         <!-- <i class="fas fa-tablet-alt"></i> -->
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
                         <span>Responsive<br>Design</span>
                     </li>
                     <li>
-                        <i class="devicon-github-original colored"></i>
+                        <!-- <i class="devicon-github-original colored" aria-hidden="true" aria-label="github icon"></i> -->
+                        <i class="fab fa-github-square" aria-hidden="true" aria-label="github icon"></i>
                         <span>GitHub</span>
                     </li>
                     <li>
-                        <i class="devicon-visualstudio-plain colored"></i>
+                        <i class="devicon-visualstudio-plain colored" aria-hidden="true" aria-label="VS code code editor icon"></i>
                         <span>VS<br>Code</span>
                     </li>
                     <li>
-                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-git-plain colored" aria-hidden="true" aria-label="git version control system icon"></i>
+                        <!-- <i class="fab fa-git-alt" aria-hidden="true" aria-label="git version control system icon"></i> -->
                         <span>Git</span> 
                     </li>
                 </ul>
         </div>
+        <!-- may need to put divs around icons so that they do not merge into each other -->
+        <!-- may switch back to commented out icons -->
     </section>
     <section id="contact">
         <div class="wrapper">
-            <h2>Contact Me (I'd love to connect)</h2>
-            <form action=""></form>
-            <a href=""></a>
-            <p></p>
+            <h2>Contact Me </h2>
+            <div class="contactDiv">
+                <div class="contactee">
+                    <p class="loveToP">I'd Love To Connect</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem placeat ratione fuga quo quisquam ipsa praesentium suscipit quae quam?</p>
+                    <a href="">toria.wm@gmail.com</a>
+                    <nav aria-label="my social media links">
+                        <a href="" aria-label="Toria's GitHub link" title="find me on GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="" aria-label="Toria's Linkein link" title="find me on LinkeIn" class="cLinked">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="" arial-label= "Toria's Twitter link" title="find me on Twitter" class="cTwitter">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+                <!-- <div> -->
+                <form action="mailto: toria.wm@gmail.com" method="#" class="contactForm" name="contactForm">
+                    <label for="contactName" class="visually-hidden">Name</label>
+                    <input type="text" id="contactName" name="contactName" placeholder="Name">
+                    
+                    <label for="contactEmail" class="visually-hidden">Email Address</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="Email Address">
+                    
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <button href="mailto: toria.wm@gmail.com">Submit Message</button>
+                </form>
+                <!-- </div> -->
+            </div>
         </div>
     </section>
 </main>
 <footer>
     <p>Developed by Toria Walker-McHayle 2019</p>
-    <p>Another p tag </p>
 </footer>
 
 <!-- light mode option in header-->
