@@ -22,13 +22,17 @@
 </html>
 
 <header>
-    <nav>
-        <ul>
+    <nav class="hamNav">
+        <ul id="myLinks">
+
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skills">Skills & Tools</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>  
     </nav>
     <div class="header">
     <div class="wrapper">
@@ -52,16 +56,20 @@
             <h2>About</h2>
             <!-- <h3>Who is Toria?</h3> -->
             <div class="about">
+                <!-- <h3>Who is Toria?</h3> -->
             <div class="aboutFlex">
 
                 <div class="aboutImg">
                     <img src="./project-images/me-pic-2.png" alt="picture of Toria">
                 </div>
                 <!-- <div class="aboutP"> -->
+                    <!-- <h3>Who is Toria?</h3> -->
+                <div class="aboutPFlex">
                     <h3>Who is Toria?</h3>
                 <p>Hey Beautiful People!</p>
                 <p>I, Toria am Front-End Developer. I love diversity. I love Inclusion. I love the planet. </p>
-                <P>I am on a mission create apps that give the all users an enjoyable experience. </P>
+                <P class.aboutP>I am on a mission create apps that give the all users an enjoyable experience. </P>
+                </div>
             <!-- </div> -->
             </div>
             </div>
@@ -121,11 +129,11 @@
                     <!-- </div> -->
                     <li>
                         <h3>My Movie Database (MDB)</h3>
-                        <div class="projFlex">
+                        <div class="projFlex mdbFlex">
                             <div class="imgDiv mdbDiv">
                                 <img src="./project-images/mdb-project.png" alt="My Movie Datatbase project screenshot" class="mdbImg">
                             </div>
-                            <div class="projDiv">
+                            <div class="projDiv mdbP">
                                 <p>Looking for a movie kick back and relax Toria? Look no further. Here you'll find the perfect movie app where you can find almost any movie from a large database.</p>
 
                                 <p>Not ready to watch yet?
@@ -150,11 +158,11 @@
                     </li>
                     <li>
                         <h3>Anywhere But Here!</h3>
-                        <div class="projFlex">
+                        <div class="projFlex anyFlex">
                             <div class="imgDiv anyDiv">
                                 <img src="./project-images/anywhere-but-here-project.png" alt="Screenshot of Anywhere But Here Project" class="anywhereImg">
                             </div>
-                            <div class="projDiv">    
+                            <div class="projDiv anyP">    
                                 <p>Stuck at home? Don't know where to go? You don't really wanna leave you're home, but you're four walls are also making you feel a little bit trapped</p>
 
                                 <p>Well here's an app that will Help you find different places in your are you can visit within any category. There not too far, not to close without too much excitement, but with just the right amount of non-excitement! Just what you're looking for! </p>
