@@ -79,27 +79,20 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
                                         /* Header */
     header{
         background-color: rgba( 77, 7, 235);
-        background-image: url(./images/triangleBig2.png) ;
-        /* background-position: 5%, 5%; */
-        background-position: 50px, 50px;
+        /* background-image: url(./images/triangleBig2.png) ;
+        background-position: 5% 56%; */
+        /* background-position: 55px, 55px; */
         background-repeat: no-repeat;
-        /* background-size: right, 0% 40%; */
+        /* background-size: right, 0% 30%; */
         color:whitesmoke;
         line-height: 1.5;
         text-align: center;
         display: flex;
+        position: relative;
         flex-direction: column;
         /* justify-content: space-evenly; */
         height: 100vh;
         width: 100%;
-    }
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
     }
 
     .hamNav {
@@ -109,7 +102,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     header ul{
         display: flex;
         justify-content: center;
-        /* margin:-top: 5px; */
+        margin-top: 10px;
         padding: 0 5%;
     }
 
@@ -141,19 +134,46 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         width: 125px; */
     }
 
-    h1{
+    /* Want to find a way that when links expand in size, they don't affect other/move elements. */
+    header img{
+        position: absolute;
+        bottom: 13%;
+        right: 60%;
+        opacity: 0.8;
+        /* margin-right: 500px; */
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    h1, h1 span{
         font-family: 'Zen Dots', cursive;
         letter-spacing: 0.2rem;
         color: whitesmoke;
         /* margin-top: 20vh */
+    }
 
+    h1{
+        margin-bottom: 10vh;
+    }
+
+    .toria{
+        padding-left: 2px;
+    }
+
+    .wm{
+        padding-right: 2px;
     }
 
     header p{ 
         color: whitesmoke;
         font-size: 1.5rem;
         letter-spacing: 0.15rem;
-        margin-top: 5vh;
+        margin-top: 10vh;
     }
 
                                         /* Main */
@@ -257,8 +277,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     .aboutImg img{
         border: 3px solid rgba( 77, 7, 235, 0.3);
 
-        height: 350px;
-        width: 300px;
+        /* height: 350px; */
+        /* width: 300px; */
         position: relative;
         bottom: 10%;
         right: 25%;
@@ -564,6 +584,38 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         }
 }   
 
+@media (max-width: 1255px) {
+    /* HEADER */
+        h1{
+            display: flex;
+            flex-direction: column;
+        }
+        header img{
+            /* bottom: 13%;
+            right: 60%; */
+            bottom: 12%;
+            right: 52%
+        }
+}
+
+@media (max-width: 1070px) {
+    /* HEADER */
+        h1{
+            font-size: 1.9rem;
+        }
+
+        header p{
+            font-size: 1.4rem;
+        }
+    
+        .header img{
+            height: calc(465px * 0.97);
+            width: calc(477px * 0.97);
+            bottom: 12%;  
+             right: 52%;
+        }
+}
+ 
 @media (max-width: 1050px){
     /* PROJECT/PORTFOLIO Section */
         .anyFlex{
@@ -575,6 +627,96 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             width: 95%;
         }
     }
+
+@media (max-width: 1035px) {
+    /* HEADER */
+    h1{
+        font-size: 1.8rem;
+    }
+
+    header p{
+        font-size: 1.3rem;
+    }
+
+    .header img{
+        height: calc(465px * 0.95);
+        width: calc(477px * 0.95);
+        /* bottom: 13%;
+        right: 60%; */
+    }
+}
+
+@media (max-width: 1020px) {
+    /* HEADER */
+    h1{
+        font-size: 1.75rem;
+    }
+
+    header p{
+        font-size: 1.25rem;
+    }
+
+    .header img{
+        height: calc(465px * 0.93);
+        width: calc(477px * 0.93);
+        /* bottom: 13%;
+        right: 60%; */
+    }
+}
+
+@media (max-width: 990px) {
+    /* HEADER */
+    h1{
+        font-size: 1.7rem;
+    }
+
+    header p{
+        font-size: 1.2rem;
+    }
+
+    .header img{
+        height: calc(465px * 0.91);
+        width: calc(477px * 0.91);
+        /* bottom: 13%;
+        right: 60%; */
+    }
+}
+
+@media (max-width: 975px) {
+    /* HEADER */
+    h1{
+        font-size: 1.65rem;
+    }
+
+    header p{
+        font-size: 1.15rem;
+    }
+
+    .header img{
+        height: calc(465px * 0.89);
+        width: calc(477px * 0.89);
+        /* bottom: 13%;
+        right: 60%; */
+    }
+}
+
+@media (max-width: 955px) {
+    /* HEADER */
+    h1{
+        font-size: 1.6rem;
+    }
+
+    header p{
+        font-size: 1.1rem;
+    }
+
+    .header img{
+        height: calc(465px * 0.87);
+        width: calc(477px * 0.87);
+        /* bottom: 13%;
+        right: 60%; */
+    }
+}
 
 @media(max-width: 930px){
     .mdbFlex, .anyFlex{
@@ -684,6 +826,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             height: calc(485px * 0.85);
             width: calc(500px * 0.85);
         }
+}
+
+@media (max-width: 599px){
+    /* add css for h1 and img */
 }
 
 @media (max-width: 575px) {
