@@ -210,7 +210,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     .imgSqSolid{
         height: 100px;
         position: relative;
-        bottom: 40.2%;
+        /* bottom: 40.2%; */
+        right: 46%;
 
     }
     .imgTri{
