@@ -336,6 +336,7 @@ html{
     main a{
         /* display: inline-block; */
         color:  #c43a9a;
+        font-size: 1.25rem;
         padding: 5% 5% 5% 0;
         /* padding: 40px 100px; */
         height: 40px;
@@ -347,7 +348,8 @@ html{
 
     main a:hover{
         color: turquoise;
-        font-size: 1.25rem
+        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     main a:visited{
@@ -511,11 +513,14 @@ html{
     }
 
     .pLinkDiv{
+        /* font-size: 1.5rem; */
+        font-weight: bold;
         padding: 2vh 0;
     }
 
     #portfolio i{
         color: rgb( 77, 7, 235);
+        font-size: 2rem;
     }
 
     .harperDiv{
@@ -584,6 +589,7 @@ html{
     #skills i{
         color: rgb( 77, 7, 235);
         font-size: 2rem    ;
+        font-size: 3rem;
     }
     .devicon{
         font-family: 'devicons';
@@ -914,20 +920,28 @@ html{
 
     /* CONTACT Section */
         .contactDiv{
-            /* flex-direction: column; */
-            /* align-items: center; */
+            flex-direction: column;
+            align-items: center;
         }
         .contactDiv p{
             /* align-self: center; */
         }
+        .contactee{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 85% ;
+        }
         .contactee p{
-            margin-left: 5%;
+            /* margin-left: 5%; */
         }
         .contactee a{
-            margin-left: 5%;
+            /* margin-left: 5%; */
         }
         #contact nav{
-            margin: 2% 0 5% 0;
+            /* margin: 2% 0 5% 0; */
+            display: flex;
+            justify-content: center;
         }
         .cLinked, 
         .cTwitter{
@@ -939,7 +953,7 @@ html{
             margin-bottom: 4%;
             /* padding: 10%; */
             margin-left: 5%;
-            width: 95%;
+            width: 85%;
         }
 }   
 
